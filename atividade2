@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer 40.000</title>
+</head>
+<body style="background-color: lightgray"> <!--Adicionadas cores ao Site-->
+    <header>
+        <h1 style="text-align: center;">Warhammer 40.000</h1> <!-- Cabeçalho da página dentro de um Header com o texto alinhado ao centro-->
+    </header>
+    
+    <nav style="display: flex; justify-content: center;"> <!--Os links agora estão dentro de um Nav, centralizados-->
+                <a href="https://warhammer40k.fandom.com/wiki/Imperium_of_Man">
+                    <img src="https://images.squarespace-cdn.com/content/v1/58869b6937c581c66b3eccc8/1518386572630-MMQNY8YZLKV53PA8SI9G/title+pic.jpg"
+                    alt="Imperium" height="102" width="142">
+                    <p>Imperium</p>
+                </a>
+                <a href="https://warhammer40k.fandom.com/wiki/Orks">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/482/885/119/5bd13131b332b-wallpaper-preview.jpg" 
+                    alt="Orks" height="102" width="142">
+                    <p>Orks</p>
+                </a>
+            
+                <a href="https://warhammer40k.fandom.com/wiki/Tyranids">
+                    <img src="https://culturedvultures.com/wp-content/uploads/2023/08/Tyranids-803x402.jpg"
+                    alt="Tyranids" height="102" width="142">
+                    <p>Tyranids</p>
+                </a>    
+    </nav>
+
+   <section style="text-align: center; padding: 10px; background-color: lightblue"><!-- Descrição do universo de Warhammer 40.000, alinhada ao centro e dentro de um Section separando a informação-->
+    <h3>
+        Warhammer 40.000 segue em 40.000 anos no futuro, onde o Imperium do Homem - a facção unida de toda a humanidade - está decaindo e luta desesperadamente para se manter de pé e conquistar territórios. As Forças do Caos começam a se expandir, com mais e mais daemônios surgindo, e com novos servos se juntando á causa da destruição. A raça semi-extinta dos Eldar tenta restaurar sua glória perdida, ao mesmo tempo em que busca evitar a extinção, enquanto os antagônicos Dark Eldar buscam evitar caírem nas garras do Deus do Prazer e Luxúria, Slaneesh, enquanto se satisfazem na vida o máximo que puderem, com métodos sadísticos e cruéis. Os Orks se tornam cada vez mais violentos, querendo batalhar mais do que nunca, e alguns murmuram do "chamad' dos deuzes". Os Necrons começam a despertar, e com o acordar dos mortos-vivos de metal, a morte começa a se alastrar pela galáxia. Tyranids, insectoídes gigantes do espaço invadem a Via Láctea com o único objetivo de devorar tudo, e um emergente, mas pequeno e fraco império, o Império Tau, tenta instaurar um regime de paz… Ou será que não?
+    </h3>
+   </section>
+
+   <article>
+    <table style="text-align: center; padding: 10px; background-color: aliceblue;"> <!--Tabela com dados sobre o assunto abordado, dentro de um Article-->
+        <header>
+            <thead style="height: 48px;">
+                <h3>Abaixo há uma tabela mostrando a descrição de algumas das raças do universo de Warhammer 40.000</h3>
+            </thead>
+        </header>
+        <tr style="text-align: center;">
+            <th>Raças</th>
+            <th>Hostilidade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr style="text-align: left;">
+            <td>
+                Imperium do Homem</td>
+            <td style="text-align: center; color: red;">
+                Espécie majoritariamente </br>hostil</td>
+            <td style="text-align-last: auto;">
+                O <b>Imperium do Homem,</b> também chamado simplesmente de Imperium,</br> 
+                é um império humano interestelar que abrange a galáxia, a autoridade máxima </br>
+                para a maioria das espécies humanas na Via Láctea no 41º milênio d.C.</td>
+        </tr>
+        <tr>
+            <td>Orks</td>
+            <td style="text-align: center; color: red">
+                Espécie alienígena </br>extremamente hostil</td>
+            <td style="text-align-last: auto;">
+                Os <b>Orks</b>, também chamados de Greenskins, </br>
+                são uma espécie selvagem, guerreira e de pele verde de </br>
+                humanóides bestiais e assexuados que estão espalhados por toda a galáxia.</td>
+        <tr>
+            <td>Tyranids</td>
+            <td style="text-align: center; color: red;">
+                Espécie alienígena </br>extremamente hostil</td>
+            <td>
+                Os <b>Tyranids</b> são uma espécie extragaláctica de hediondos insetoides. </br>
+                Na verdade, eles compreendem todo um ecossistema espacial composto por </br>
+                inúmeras bioformas diferentes, todas variações do mesmo tema genético.
+            </td>
+        </tr>
+        </tr>
+    </table>
+   </article>
+
+   <article> <!--O Form se encontra dentro de um Article, separado para poder coletar as informações que são pedidas-->
+    <h3>Fale sobre você:</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="GET" style="background-color: aliceblue; padding: 10px;">
+        <label for="nome">Digite seu nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="numero">Digite um numero (entre 25000 e 30000):</label>
+        <input type="number" id="numero" name="numero" min="25000" max="30000">
+
+        <p>Selecione sua raça favorita do universo warhammer 40.000</p>
+        <input type="radio" id="imperium" name="fav_race" value="IMPERIUM">
+        <label for="imperium">Imperium</label><br>
+
+        <input type="radio" id="ork" name="fav_race" value="ORK">
+        <label for="ork">Ork</label><br>
+
+        <input type="radio" id="eldar" name="fav_race" value="ELD">
+        <label for="eldar">Aeldari/Eldar</label><br>
+
+        <input type="radio" id="drk_eldar" name="fav_race" value="DRK_ELD">
+        <label for="drk_eldar">Dark Eldar</label><br>
+
+        <input type="radio" id="chaos" name="fav_race" value="CHAOS">
+        <label for="chaos">Forças do Caos</label><br>
+
+        <input type="radio" id="necrons" name="fav_race" value="NECRONS">
+        <label for="necrons">Necrons</label><br>
+
+        <input type="radio" id="tau" name="fav_race" value="TAU">
+        <label for="tau">Império T'au</label><br>
+
+    <p>Qual seu tipo preferido de jogos?</p>
+        <input type="checkbox" id="fps" name="f_person" value="FPS">
+        <label for="game1">Tiro em primeira pessoa</label><br>
+
+        <input type="checkbox" id="rts" name="r_time" value="RTS">
+        <label for="game2">Estratégia em tempo real</label><br>
+
+        <input type="checkbox" id="rpg" name="r_playing" value="RPG">
+        <label for="game3">Role playing game</label><br>
+
+        <input type="checkbox" id="tabuleiro" name="table_top" value="TBT">
+        <label for="game4">Jogos de tabuleiro</label><br><br>
+        <button type="submit">Pronto</button>
+    
+    </form>
+   </article>
+   </body>
+<footer style="text-align: center"> <!--Footer da pagina-->
+    <h5>
+        Site em produção, alterações feitas por Lucas de Castro em sua humilde casa</h5>
+   </footer>
+</html>
